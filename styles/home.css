@@ -1,0 +1,76 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+ background-color: #f9f9f9;
+ color: #333;
+ margin: 0;
+ padding: 0;
+}
+
+.page-title {
+ text-align: center;
+ margin: 20px 0;
+ font-size: 2.5em;
+ font-weight: bold;
+ animation: colorChange 3s infinite; /* Animação de cores */
+}
+
+@keyframes colorChange {
+ 0% { color: blue; }
+ 50% { color: black; }
+ 100% { color: red; }
+}
+
+main {
+ padding: 20px;
+ max-width: 800px;
+ margin: auto;
+}
+
+.presentation {
+ margin-bottom: 30px;
+ padding: 20px;
+ background-color: black; /* Fundo preto para a apresentação */
+ color: white; /* Texto branco */
+ border-radius: 8px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+ color: #ffc107; /* Cor do título da apresentação */
+ margin-top: 0;
+}
+
+.buttons {
+ margin-top: 20px;
+ text-align: center;
+}
+
+.btn {
+ background-color: #007bff;
+ color: white;
+ padding: 10px 15px;
+ border-radius: 5px;
+ text-decoration: none;
+ transition: background-color 0.3s, transform 0.2s;
+ display: inline-block; /* Para aplicar margens */
+ margin: 5px 10px;
+}
+
+.btn:hover {
+ background-color: #0056b3;
+ transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+footer {
+ text-align: center;
+ padding: 20px;
+ background-color: #343a40;
+ color: white;
+ position: relative;
+ margin-top: 20px;
+ box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
